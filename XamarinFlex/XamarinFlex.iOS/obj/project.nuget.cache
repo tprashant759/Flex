@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "VP346wQ3OyMD6DeTGmODkCMjTp5RylSEDQrG5d1cE1xZ/wupl2Y6XdYSSqoaQgg+w65eBgNg7cpc7BICyJQy1g==",
+  "success": true,
+  "projectFilePath": "/Users/prashantthakkar/Desktop/Flex/XamarinFlex/XamarinFlex.iOS/XamarinFlex.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/prashantthakkar/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/prashantthakkar/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
+    "/Users/prashantthakkar/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}
