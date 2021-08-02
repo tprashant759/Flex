@@ -36,11 +36,19 @@
       "frameworks": {
         "monoandroid11.0": {
           "dependencies": {
+            "Acr.UserDialogs": {
+              "target": "Package",
+              "version": "[7.1.0.514, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.6.1, )"
             },
             "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2012, )"
+            },
+            "Xamarin.Forms.Maps": {
               "target": "Package",
               "version": "[5.0.0.2012, )"
             }
@@ -82,6 +90,10 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Acr.UserDialogs": {
+              "target": "Package",
+              "version": "[7.1.0.514, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -93,6 +105,10 @@
               "version": "[1.6.1, )"
             },
             "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2012, )"
+            },
+            "Xamarin.Forms.Maps": {
               "target": "Package",
               "version": "[5.0.0.2012, )"
             }
@@ -107,7 +123,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/Users/prashantthakkar/Library/Caches/VisualStudio/8.0/MSBuild/3245_1/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/prashantthakkar/Library/Caches/VisualStudio/8.0/MSBuild/1008_1/RuntimeIdentifierGraph.json"
         }
       }
     }

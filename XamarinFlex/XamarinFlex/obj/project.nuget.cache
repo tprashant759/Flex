@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "WwcM3jl+fRBwmOxKqMGPl1Xnrvf+elZ8SF/5vD5UNStPwi5v1CYAyq+kQaOCzn3P7XjFIyH9x5iDJTng+jjanQ==",
+  "dgSpecHash": "NGN7nNOeQLP9KsV+XjC1qKxIRh87AIBNrMo8+9z+bFp9+tajOAxdtRbO4QSKYNZuwfWFHcILTdOiJs0w6qCbrw==",
   "success": true,
   "projectFilePath": "/Users/prashantthakkar/Desktop/Flex/XamarinFlex/XamarinFlex/XamarinFlex.csproj",
   "expectedPackageFiles": [
+    "/Users/prashantthakkar/.nuget/packages/acr.userdialogs/7.1.0.514/acr.userdialogs.7.1.0.514.nupkg.sha512",
     "/Users/prashantthakkar/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/Users/prashantthakkar/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
     "/Users/prashantthakkar/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
     "/Users/prashantthakkar/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
-    "/Users/prashantthakkar/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "/Users/prashantthakkar/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "/Users/prashantthakkar/.nuget/packages/xamarin.forms.maps/5.0.0.2012/xamarin.forms.maps.5.0.0.2012.nupkg.sha512"
   ],
   "logs": []
 }

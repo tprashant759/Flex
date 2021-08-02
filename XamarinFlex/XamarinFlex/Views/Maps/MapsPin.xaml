@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XamarinFlex.Views.Maps.MapsPin"
+    xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="true"
+    Visual="Material">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+
+            <maps:Map x:Name="map"
+                      Visual="Material"
+                      Grid.Row="0"
+                      HorizontalOptions="FillAndExpand"
+                      VerticalOptions="FillAndExpand"
+                      IsShowingUser="True" />
+
+
+
+            <StackLayout Grid.Row="1" Margin="5" Orientation="Horizontal" HorizontalOptions="FillAndExpand" >
+
+                <Slider x:Name="zoomSlider"
+                        ValueChanged="zoomSlider_ValueChanged"
+                        HorizontalOptions="FillAndExpand"
+                        Maximum="18"
+                        Minimum="1"
+                        Value="1"/>
+
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" Margin="5" HorizontalOptions="FillAndExpand" >
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
+                    <Button Text="Satellite"
+                        HorizontalOptions="StartAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Clicked="HandleClicked"/>
+
+                    <Button Text="Hybrid"
+                        HorizontalOptions="StartAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Clicked="HandleClicked"/>
+
+                    <Button Text="Street"
+                        HorizontalOptions="StartAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Clicked="HandleClicked"/>
+                </StackLayout> 
+
+            </StackLayout>
+
+
+            <StackLayout Grid.Row="3" Margin="5" Orientation="Horizontal" HorizontalOptions="FillAndExpand" >
+
+                <Button Text="Add more pins"
+                        HorizontalOptions="StartAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Command="{Binding AddPinCommand}"/>
+
+                <Button Text="Current Location"
+                        HorizontalOptions="EndAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Command="{Binding CurrentLocationCommand}"/>
+
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

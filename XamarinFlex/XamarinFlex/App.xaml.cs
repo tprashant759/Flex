@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinFlex.Views;
 
 namespace XamarinFlex
 {
@@ -9,8 +10,7 @@ namespace XamarinFlex
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new Views.HomePage());
         }
 
         protected override void OnStart()
