@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XamarinFlex.Views.SQLiteFlex"
+    x:Name="todoList">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="LightGray" >
+            <ListView HorizontalOptions="FillAndExpand"
+                      VerticalOptions="StartAndExpand"
+                      HasUnevenRows="True"
+                ItemsSource="{Binding ToDoList}"
+                SelectedItem="{Binding SelectedToDoItem}"
+                      >
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid HorizontalOptions="FillAndExpand"
+                                         VerticalOptions="FillAndExpand"
+                                         Padding="5"
+                                         BackgroundColor="White">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="30"/>
+                                </Grid.ColumnDefinitions>
+
+                                <StackLayout Grid.Column="0"
+                                    HorizontalOptions="FillAndExpand"
+                                             VerticalOptions="CenterAndExpand">
+
+                                    <Label Text="{Binding Title}"
+                                           FontAttributes="Bold"
+                                   HorizontalOptions="StartAndExpand"
+                                   VerticalOptions="CenterAndExpand" />
+
+                                    <Label Text="{Binding Description}"
+                                           FontAttributes="None"
+                                   HorizontalOptions="StartAndExpand"
+                                   VerticalOptions="CenterAndExpand" />
+
+                                </StackLayout>
+
+                                <Image  Grid.Column ="1"
+                                        HorizontalOptions="FillAndExpand"
+                                        VerticalOptions="CenterAndExpand"
+                                        Source="close.png" HeightRequest="25" WidthRequest="25">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding BindingContext.DeleteToDoItemCommand}" CommandParameter="{Binding Source={x:Reference todoList},Path=BindingContext}"/>
+                                    </Image.GestureRecognizers>
+                                </Image>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

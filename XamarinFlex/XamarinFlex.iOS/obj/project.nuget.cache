@@ -1,12 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "LBZq0hnHQ9SCPMdqCZdeb2rUo/X96NQeZV1+/+79XlvZE+wg6ZwThnWThMZ0pPeUQaDQtaHPmuRZDHLFpI0ogQ==",
+  "dgSpecHash": "JgTIoAaMVV8zc51i9ZT8j2uRBiMDijUPx4Lq/ho7IXDCjoTMKIqiU4V4fTjZGaS3yHdiHTAMBqoHbdiE8JYidQ==",
   "success": true,
   "projectFilePath": "/Users/prashantthakkar/Desktop/Flex/XamarinFlex/XamarinFlex.iOS/XamarinFlex.iOS.csproj",
   "expectedPackageFiles": [
     "/Users/prashantthakkar/.nuget/packages/acr.userdialogs/7.1.0.514/acr.userdialogs.7.1.0.514.nupkg.sha512",
     "/Users/prashantthakkar/.nuget/packages/btprogresshud/1.3.1/btprogresshud.1.3.1.nupkg.sha512",
+    "/Users/prashantthakkar/.nuget/packages/sqlite-net-pcl/1.7.335/sqlite-net-pcl.1.7.335.nupkg.sha512",
+    "/Users/prashantthakkar/.nuget/packages/sqlitepclraw.bundle_green/2.0.3/sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
+    "/Users/prashantthakkar/.nuget/packages/sqlitepclraw.core/2.0.3/sqlitepclraw.core.2.0.3.nupkg.sha512",
+    "/Users/prashantthakkar/.nuget/packages/sqlitepclraw.provider.dynamic_cdecl/2.0.3/sqlitepclraw.provider.dynamic_cdecl.2.0.3.nupkg.sha512",
+    "/Users/prashantthakkar/.nuget/packages/system.buffers/4.4.0/system.buffers.4.4.0.nupkg.sha512",
+    "/Users/prashantthakkar/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
     "/Users/prashantthakkar/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/prashantthakkar/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "/Users/prashantthakkar/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
     "/Users/prashantthakkar/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512",
     "/Users/prashantthakkar/.nuget/packages/xamarin.forms.maps/5.0.0.2012/xamarin.forms.maps.5.0.0.2012.nupkg.sha512"

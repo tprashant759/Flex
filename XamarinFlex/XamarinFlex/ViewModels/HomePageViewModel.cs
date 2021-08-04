@@ -109,7 +109,7 @@ namespace XamarinFlex.ViewModels
                         await m_view.Navigation.PushAsync(new Views.Maps.MapsPin());
                         break;
                     case 2: //SQLite
-                        //await m_view.Navigation.PushAsync(new Views.Maps.MapsPin());
+                        await m_view.Navigation.PushAsync(new Views.SQLiteFlex());
                         break;
                     case 3: //Skiasharp
                         //await m_view.Navigation.PushAsync(new Views.Maps.MapsPin());

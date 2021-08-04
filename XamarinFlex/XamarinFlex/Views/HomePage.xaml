@@ -9,7 +9,8 @@
             <ListView HorizontalOptions="FillAndExpand"
                       VerticalOptions="StartAndExpand"
                 ItemsSource="{Binding FlexSource}"
-                SelectedItem="{Binding SelectedFlexItem}">
+                SelectedItem="{Binding SelectedFlexItem}"
+                      HasUnevenRows="True">
 
                 <ListView.ItemTemplate>
                     <DataTemplate>

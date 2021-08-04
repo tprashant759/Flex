@@ -1,13 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "NGN7nNOeQLP9KsV+XjC1qKxIRh87AIBNrMo8+9z+bFp9+tajOAxdtRbO4QSKYNZuwfWFHcILTdOiJs0w6qCbrw==",
+  "dgSpecHash": "wREi3/1+MVoSgkMUOyfH+uMU3nHYMJzsfmXLvG24rmb0bk4re00b7QSCtZHmU9cM76FZBAs6sHC75T0KtnnFQA==",
   "success": true,
   "projectFilePath": "/Users/prashantthakkar/Desktop/Flex/XamarinFlex/XamarinFlex/XamarinFlex.csproj",
   "expectedPackageFiles": [
     "/Users/prashantthakkar/.nuget/packages/acr.userdialogs/7.1.0.514/acr.userdialogs.7.1.0.514.nupkg.sha512",
     "/Users/prashantthakkar/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/Users/prashantthakkar/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/prashantthakkar/.nuget/packages/sqlite-net-pcl/1.7.335/sqlite-net-pcl.1.7.335.nupkg.sha512",
+    "/Users/prashantthakkar/.nuget/packages/sqlitepclraw.bundle_green/2.0.3/sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
+    "/Users/prashantthakkar/.nuget/packages/sqlitepclraw.core/2.0.3/sqlitepclraw.core.2.0.3.nupkg.sha512",
+    "/Users/prashantthakkar/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.0.3/sqlitepclraw.lib.e_sqlite3.2.0.3.nupkg.sha512",
+    "/Users/prashantthakkar/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.0.3/sqlitepclraw.provider.e_sqlite3.2.0.3.nupkg.sha512",
+    "/Users/prashantthakkar/.nuget/packages/system.buffers/4.4.0/system.buffers.4.4.0.nupkg.sha512",
+    "/Users/prashantthakkar/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
     "/Users/prashantthakkar/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/prashantthakkar/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "/Users/prashantthakkar/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
     "/Users/prashantthakkar/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512",
     "/Users/prashantthakkar/.nuget/packages/xamarin.forms.maps/5.0.0.2012/xamarin.forms.maps.5.0.0.2012.nupkg.sha512"
