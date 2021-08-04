@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Kvzvk/DqstIytuxckms3IHxIn6z7dNHnRC9u1/J7OPrU1opvHTn0ftRnlnCKfC1dlLwcF+d/YsXDsdwlnEattA==",
+  "success": true,
+  "projectFilePath": "/Users/prashantthakkar/Desktop/Flex/XamarinFlex/XamarinFlex.DataModel/XamarinFlex.DataModel.csproj",
+  "expectedPackageFiles": [
+    "/Users/prashantthakkar/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/prashantthakkar/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,8 @@
+/Users/prashantthakkar/Desktop/Flex/XamarinFlex/XamarinFlex.DataModel/bin/Debug/netstandard2.0/XamarinFlex.DataModel.deps.json
+/Users/prashantthakkar/Desktop/Flex/XamarinFlex/XamarinFlex.DataModel/bin/Debug/netstandard2.0/XamarinFlex.DataModel.dll
+/Users/prashantthakkar/Desktop/Flex/XamarinFlex/XamarinFlex.DataModel/bin/Debug/netstandard2.0/XamarinFlex.DataModel.pdb
+/Users/prashantthakkar/Desktop/Flex/XamarinFlex/XamarinFlex.DataModel/obj/Debug/netstandard2.0/XamarinFlex.DataModel.AssemblyInfoInputs.cache
+/Users/prashantthakkar/Desktop/Flex/XamarinFlex/XamarinFlex.DataModel/obj/Debug/netstandard2.0/XamarinFlex.DataModel.AssemblyInfo.cs
+/Users/prashantthakkar/Desktop/Flex/XamarinFlex/XamarinFlex.DataModel/obj/Debug/netstandard2.0/XamarinFlex.DataModel.csproj.CoreCompileInputs.cache
+/Users/prashantthakkar/Desktop/Flex/XamarinFlex/XamarinFlex.DataModel/obj/Debug/netstandard2.0/XamarinFlex.DataModel.dll
+/Users/prashantthakkar/Desktop/Flex/XamarinFlex/XamarinFlex.DataModel/obj/Debug/netstandard2.0/XamarinFlex.DataModel.pdb
