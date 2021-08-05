@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinFlex.iOS", "XamarinF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinFlex", "XamarinFlex\XamarinFlex.csproj", "{B30AA1C3-2020-4AEA-BB8C-E07F9F8E0B27}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DataModel", "Shared\DataModel.shproj", "{CE99DF81-C85F-4E64-92DE-069CEEFE034F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinFlex.DataModel", "XamarinFlex.DataModel\XamarinFlex.DataModel.csproj", "{A9E8A026-077F-4C72-81C3-12CB5C05FD01}"
 EndProject
 Global

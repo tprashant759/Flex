@@ -1216,6 +1216,9 @@
       "XamarinFlex.DataModel/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "sqlite-net-pcl": "1.7.335"
+        },
         "compile": {
           "bin/placeholder/XamarinFlex.DataModel.dll": {}
         },

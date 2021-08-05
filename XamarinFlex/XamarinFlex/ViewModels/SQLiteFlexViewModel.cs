@@ -25,7 +25,12 @@ namespace XamarinFlex.ViewModels
         public ToDoItem SelectedToDoItem
         {
             get { return selectedToDoItem; }
-            set { selectedToDoItem = value; OnPropertyChanged(); }
+            set
+            {
+                selectedToDoItem = value; OnPropertyChanged();
+                if (value != null)
+                    MarkDoneToDoItemAction();
+            }
         }
 
 
@@ -63,7 +68,7 @@ namespace XamarinFlex.ViewModels
         {
             try
             {
-         
+
 
             }
             catch (Exception ex)
@@ -78,13 +83,13 @@ namespace XamarinFlex.ViewModels
             {
                 UserDialogs.Instance.ShowLoading();
 
-                ToDoList = new ObservableCollection<ToDoItem>();
-                ToDoList.Add(new ToDoItem { id = Guid.NewGuid(), Title = "Go for a walk", Description = "6 am sharp , 5 km walk .", Done = 0 });
-                ToDoList.Add(new ToDoItem { id = Guid.NewGuid(), Title = "Brakfast", Description = "8 am sharp , caloty deficit diet .", Done = 0 });
-                ToDoList.Add(new ToDoItem { id = Guid.NewGuid(), Title = "Excercise", Description = "5 pm sharp , 15 mins HIIT .", Done = 0 });
+                //ToDoList = new ObservableCollection<ToDoItem>();
+                //ToDoList.Add(new ToDoItem { id = Guid.NewGuid(), Title = "Go for a walk", Description = "6 am sharp , 5 km walk .", Done = 0 });
+                //ToDoList.Add(new ToDoItem { id = Guid.NewGuid(), Title = "Brakfast", Description = "8 am sharp , caloty deficit diet .", Done = 0 });
+                //ToDoList.Add(new ToDoItem { id = Guid.NewGuid(), Title = "Excercise", Description = "5 pm sharp , 15 mins HIIT .", Done = 0 });
 
-                foreach (var item in ToDoList)
-                    await App.Database.SaveOrUpdateItemAsync(item);
+                //foreach (var item in ToDoList)
+                //    await App.Database.SaveOrUpdateItemAsync(item);
 
                 ToDoList = new ObservableCollection<ToDoItem>(await App.Database.GetAllItemsAsync()); ;
                 UserDialogs.Instance.HideLoading();
@@ -103,7 +108,7 @@ namespace XamarinFlex.ViewModels
         public ICommand OpenAddToDoItemCommand { get { return new Command(OpenAddToDoItemAction); } }
         public ICommand AddToDoItemCommand { get { return new Command(AddToDoItemAction); } }
         public ICommand DeleteToDoItemCommand { get { return new Command(DeleteToDoItemAction); } }
-        public ICommand MarkDoneToDoItemCommand { get { return new Command(MarkDoneToDoItemAction); } }
+        //public ICommand MarkDoneToDoItemCommand { get { return new Command(MarkDoneToDoItemAction); } }
 
         #endregion
 
@@ -113,6 +118,8 @@ namespace XamarinFlex.ViewModels
         {
             try
             {
+                Title = string.Empty;
+                Description = string.Empty;
                 await m_view.Navigation.PushAsync(new Views.SQLite.AddToDoItem(this));
             }
             catch (Exception ex)
@@ -153,13 +160,23 @@ namespace XamarinFlex.ViewModels
             }
         }
 
-        private async void MarkDoneToDoItemAction(object obj)
+        private async void MarkDoneToDoItemAction()
         {
             try
             {
-                SelectedToDoItem.Done = 1;
-                await App.Database.SaveOrUpdateItemAsync(SelectedToDoItem);
-                await m_view.Navigation.PopAsync();
+                var markDone = await UserDialogs.Instance.ConfirmAsync("Mark as done ?", string.Empty, "Ok", "Cancel");
+
+                if (markDone)
+                {
+                    SelectedToDoItem.Done = true;
+                    await App.Database.SaveOrUpdateItemAsync(SelectedToDoItem);
+                    ToDoList = new ObservableCollection<ToDoItem>(await App.Database.GetAllItemsAsync());
+                }
+                else
+                {
+                    SelectedToDoItem = null;
+                }
+                //await m_view.Navigation.PopAsync();
             }
             catch (Exception ex)
             {

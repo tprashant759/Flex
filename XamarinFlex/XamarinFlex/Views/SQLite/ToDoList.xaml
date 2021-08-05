@@ -4,6 +4,28 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="XamarinFlex.Views.SQLiteFlex"
     x:Name="todoList">
+    <NavigationPage.TitleView>
+        <Grid HorizontalOptions="FillAndExpand"
+                     VerticalOptions="FillAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="30"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="To do list"
+                   Grid.Column="0"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="StartAndExpand"/>
+            <Image Source="plus.png"
+                   Grid.Column="1"
+                   HeightRequest="25"
+                   HorizontalOptions="EndAndExpand"
+                   VerticalOptions="CenterAndExpand">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding OpenAddToDoItemCommand}"/>
+                </Image.GestureRecognizers>
+            </Image>
+        </Grid>
+    </NavigationPage.TitleView>
     <ContentPage.Content>
         <StackLayout BackgroundColor="LightGray" >
             <ListView HorizontalOptions="FillAndExpand"
@@ -19,9 +41,11 @@
                             <Grid HorizontalOptions="FillAndExpand"
                                          VerticalOptions="FillAndExpand"
                                          Padding="5"
+                                  ColumnSpacing="5"
                                          BackgroundColor="White">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="auto"/>
                                     <ColumnDefinition Width="30"/>
                                 </Grid.ColumnDefinitions>
 
@@ -41,12 +65,26 @@
 
                                 </StackLayout>
 
-                                <Image  Grid.Column ="1"
+
+                                <Frame Grid.Column="1"
+                                       IsVisible="{Binding Done}"
+                                       HasShadow="False"
+                                       Padding="5"
+                                       VerticalOptions="CenterAndExpand"
+                                       BorderColor="Green"
+                                       CornerRadius="3">
+                                    <Label Text="Done" 
+                                           TextColor="Green"
+                                           HorizontalOptions="CenterAndExpand"
+                                           VerticalOptions="CenterAndExpand"/>
+                                </Frame>
+
+                                <Image  Grid.Column ="2"
                                         HorizontalOptions="FillAndExpand"
                                         VerticalOptions="CenterAndExpand"
                                         Source="close.png" HeightRequest="25" WidthRequest="25">
                                     <Image.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding BindingContext.DeleteToDoItemCommand}" CommandParameter="{Binding Source={x:Reference todoList},Path=BindingContext}"/>
+                                        <TapGestureRecognizer Command="{Binding Source={x:Reference todoList}, Path=BindingContext.DeleteToDoItemCommand}" />
                                     </Image.GestureRecognizers>
                                 </Image>
                             </Grid>

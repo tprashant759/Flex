@@ -29,6 +29,7 @@
     <None Remove="Constants\" />
     <None Remove="Database\" />
     <None Remove="Views\SQLite\" />
+    <None Remove="Behaviours\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
@@ -39,6 +40,7 @@
     <Folder Include="Constants\" />
     <Folder Include="Database\" />
     <Folder Include="Views\SQLite\" />
+    <Folder Include="Behaviours\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XamarinFlex.DataModel\XamarinFlex.DataModel.csproj" />

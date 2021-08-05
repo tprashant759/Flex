@@ -3,7 +3,72 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="XamarinFlex.Views.SQLite.AddToDoItem">
+     <NavigationPage.TitleView>
+        <Grid HorizontalOptions="FillAndExpand"
+                     VerticalOptions="FillAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Add To do item"
+                   Grid.Column="0"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="StartAndExpand"/>
+        </Grid>
+    </NavigationPage.TitleView>
     <ContentPage.Content>
-        
+        <Grid HorizontalOptions="FillAndExpand"
+              VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="0"
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="StartAndExpand"
+                         Spacing="5"
+                         Padding="5">
+
+                <StackLayout HorizontalOptions="FillAndExpand"
+                             VerticalOptions="StartAndExpand"
+                             Spacing="0">
+                    <Label Text="Title"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="CenterAndExpand"/>
+                    <Entry Text="{Binding Title}"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+
+                <StackLayout HorizontalOptions="FillAndExpand"
+                             VerticalOptions="StartAndExpand"
+                             Spacing="0">
+                    <Label Text="Description"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="CenterAndExpand"/>
+                    <Entry Text="{Binding Description}"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+
+            </StackLayout>
+
+            <StackLayout Grid.Row="1"
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="EndAndExpand"
+                             BackgroundColor="LightGreen">
+                <Button BackgroundColor="LightGreen"
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="CenterAndExpand"
+                            Text="Add"
+                            TextColor="White">
+                </Button>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding AddToDoItemCommand}"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
