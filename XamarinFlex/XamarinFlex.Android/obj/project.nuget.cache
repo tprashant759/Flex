@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "q2S3m5jf60xi8vj5F6pE/bBWU6flKJBKZaqF2MuE+VIfex0hNvUDY29NOi8/BOdJLSYrj4TljHYnljt24utEtg==",
+  "dgSpecHash": "MH6MzMPYlBvEgYNrRsYOi7/NOnJzwd0gNFx/kj2oubbgbonug4IrDIvfkhrZUrT6I+VKkpe9F/Q9BL7WyYlwVA==",
   "success": true,
   "projectFilePath": "/Users/prashantthakkar/Desktop/Flex/XamarinFlex/XamarinFlex.Android/XamarinFlex.Android.csproj",
   "expectedPackageFiles": [
     "/Users/prashantthakkar/.nuget/packages/acr.userdialogs/7.1.0.514/acr.userdialogs.7.1.0.514.nupkg.sha512",
     "/Users/prashantthakkar/.nuget/packages/andhud/1.4.2/andhud.1.4.2.nupkg.sha512",
+    "/Users/prashantthakkar/.nuget/packages/skiasharp/2.80.3/skiasharp.2.80.3.nupkg.sha512",
+    "/Users/prashantthakkar/.nuget/packages/skiasharp.views/2.80.3/skiasharp.views.2.80.3.nupkg.sha512",
+    "/Users/prashantthakkar/.nuget/packages/skiasharp.views.forms/2.80.3/skiasharp.views.forms.2.80.3.nupkg.sha512",
     "/Users/prashantthakkar/.nuget/packages/sqlite-net-pcl/1.7.335/sqlite-net-pcl.1.7.335.nupkg.sha512",
     "/Users/prashantthakkar/.nuget/packages/sqlitepclraw.bundle_green/2.0.3/sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
     "/Users/prashantthakkar/.nuget/packages/sqlitepclraw.core/2.0.3/sqlitepclraw.core.2.0.3.nupkg.sha512",

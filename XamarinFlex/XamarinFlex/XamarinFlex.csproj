@@ -16,6 +16,7 @@
     <PackageReference Include="Acr.UserDialogs" Version="7.1.0.514" />
     <PackageReference Include="Xamarin.Forms.Maps" Version="5.0.0.2012" />
     <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="2.80.3" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\" />
@@ -30,6 +31,11 @@
     <None Remove="Database\" />
     <None Remove="Views\SQLite\" />
     <None Remove="Behaviours\" />
+    <None Remove="SkiaSharp" />
+    <None Remove="Views\SkiaSharp\" />
+    <None Remove="SkiaSharp.Views.Forms" />
+    <None Remove="Effects\" />
+    <None Remove="Effects\TouchTracking\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
@@ -41,6 +47,9 @@
     <Folder Include="Database\" />
     <Folder Include="Views\SQLite\" />
     <Folder Include="Behaviours\" />
+    <Folder Include="Views\SkiaSharp\" />
+    <Folder Include="Effects\" />
+    <Folder Include="Effects\TouchTracking\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XamarinFlex.DataModel\XamarinFlex.DataModel.csproj" />

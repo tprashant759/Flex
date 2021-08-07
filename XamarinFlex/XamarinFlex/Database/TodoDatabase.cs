@@ -17,9 +17,17 @@ namespace XamarinFlex.Database
 
         public static readonly AsyncLazy<TodoDatabase> Instance = new AsyncLazy<TodoDatabase>(async () =>
        {
-           var instance = new TodoDatabase();
-           CreateTableResult result = await Database.CreateTableAsync<ToDoItem>();
-           return instance;
+           try
+           {
+
+               var instance = new TodoDatabase();
+               CreateTableResult result = await Database.CreateTableAsync<ToDoItem>();
+               return instance;
+           }
+           catch (Exception ex)
+           {
+               return null;
+           }
        });
 
         #endregion
